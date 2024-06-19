@@ -80,7 +80,7 @@ with model_training:
         @st.cache_resource
         def load_model():
             model = smp.PSPNet(in_channels=3, classes=21)
-            checkpoint = torch.load("best_model.pth", map_location=torch.device('cpu'))
+            checkpoint = torch.load("/Users/dhyeydesai/Desktop/ML_DL_Projects/Breast Cancer Semantic Segmentation (BCSS) /best_model.pth", map_location=torch.device('cpu'))
             model.load_state_dict(checkpoint)
             model.eval()
             return model
