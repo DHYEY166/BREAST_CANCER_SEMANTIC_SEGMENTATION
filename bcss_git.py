@@ -7,6 +7,7 @@ import segmentation_models_pytorch as smp
 from torchvision import transforms
 import matplotlib.pyplot as plt
 import os
+from pathlib import Path
 
 RESIZE = (224, 224)
 MEAN = [0.485, 0.456, 0.406]
@@ -81,7 +82,7 @@ with model_training:
         @st.cache_resource
         def load_model():
             model = smp.PSPNet(in_channels=3, classes=21)
-            model_path = "/Users/dhyeydesai/Desktop/ML_DL_Projects/Breast Cancer Semantic Segmentation (BCSS)/best_model.pth"
+            model_path = "/Users/dhyeydesai/Desktop/ML_DL_Projects/PUBLICATIONS/BCSS/BREAST_CANCER_SEMANTIC_SEGMENTATION/best_model.pth"
             if not os.path.exists(model_path):
                 raise FileNotFoundError(f"Model file not found: {model_path}")
             checkpoint = torch.load(model_path, map_location=torch.device('cpu'))
