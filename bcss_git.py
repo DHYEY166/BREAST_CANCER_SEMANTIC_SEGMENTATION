@@ -51,10 +51,10 @@ image_transforms = transforms.Compose(
 mask_transforms = transforms.Compose([transforms.Resize(RESIZE), transforms.ToTensor()])
 
 # 1. Streamlit Interface Setup
-header = st.beta_container()
-dataset = st.beta_container()
-features = st.beta_container()
-model_training = st.beta_container()
+header = st.container()
+dataset = st.container()
+features = st.container()
+model_training = st.container()
 
 with header:
     st.title("Welcome to my awesome data science project!")
