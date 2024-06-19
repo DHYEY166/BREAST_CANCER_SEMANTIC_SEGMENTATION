@@ -81,7 +81,7 @@ with model_training:
         @st.cache_resource
         def load_model():
             model = smp.PSPNet(in_channels=3, classes=21)
-            model_path = "/Users/dhyeydesai/Desktop/ML_DL_Projects/PUBLICATIONS/BCSS/BREAST_CANCER_SEMANTIC_SEGMENTATION/best_model.pth"
+            model_path = "best_model.pth"
             if not os.path.exists(model_path):
                 raise FileNotFoundError(f"Model file not found: {model_path}")
             checkpoint = torch.load(model_path, map_location=torch.device('cpu'))
