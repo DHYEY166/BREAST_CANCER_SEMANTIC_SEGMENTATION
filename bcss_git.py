@@ -1,7 +1,6 @@
 import streamlit as st
 import torch
 import numpy as np
-import cv2
 from PIL import Image
 import segmentation_models_pytorch as smp
 from torchvision import transforms
