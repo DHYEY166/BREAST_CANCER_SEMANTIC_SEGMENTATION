@@ -58,11 +58,11 @@ features = st.container()
 model_training = st.container()
 
 with header:
-    st.title("Welcome to my awesome data science project!")
+    st.title("Welcome to my Data Science Project!")
     st.text("In this project, we perform breast cancer semantic segmentation.")
 
 with dataset:
-    st.header("Dataset Overview")
+    st.header("App Overview")
     st.text("This app allows you to upload an image for segmentation.")
 
 with features:
