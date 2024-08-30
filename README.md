@@ -26,18 +26,20 @@ To run this application locally, follow these steps:
 1. Clone the repository:
    
    git clone https://github.com/DHYEY166/BREAST_CANCER_SEMANTIC_SEGMENTATION.git
+   
    cd breast-cancer-segmentation
 
-2. Create a virtual environment (optional but recommended):
+3. Create a virtual environment (optional but recommended):
 
    python -m venv venv
+   
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
-3. Install the required packages:
+5. Install the required packages:
 
    pip install -r requirements.txt
 
-4. Run the Streamlit application:
+6. Run the Streamlit application:
 
    streamlit run app.py
 
