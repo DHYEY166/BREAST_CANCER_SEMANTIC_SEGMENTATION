@@ -25,7 +25,7 @@ To run this application locally, follow these steps:
 
 1. Clone the repository:
    
-   git clone https://github.com/your-username/breast-cancer-segmentation.git
+   git clone https://github.com/DHYEY166/BREAST_CANCER_SEMANTIC_SEGMENTATION.git
    cd breast-cancer-segmentation
 
 2. Create a virtual environment (optional but recommended):
